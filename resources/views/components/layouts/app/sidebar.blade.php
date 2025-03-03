@@ -14,6 +14,10 @@
             <flux:navlist variant="outline">
                 <flux:navlist.group heading="Platform" class="grid">
                     <flux:navlist.item icon="home" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Dashboard') }}</flux:navlist.item>
+                    <flux:navlist.item icon="home" :href="route('counter')" :current="request()->routeIs('counter')" wire:navigate>{{ __('Counter') }}</flux:navlist.item>
+                    <flux:navlist.item icon="home" :href="route('bird')" :current="request()->routeIs('bird')" wire:navigate>{{ __('Birds') }}</flux:navlist.item>
+                    <flux:navlist.item icon="home" :href="route('lazy')" :current="request()->routeIs('lazy')" wire:navigate>{{ __('Lazy') }}</flux:navlist.item>
+                    <flux:navlist.item icon="home" :href="route('bookmarks')" :current="request()->routeIs('bookmarks')" wire:navigate>{{ __('Bookmarks') }}</flux:navlist.item>
                 </flux:navlist.group>
             </flux:navlist>
 
